@@ -1,4 +1,4 @@
-"use strict"; // строгий режим
+'use strict'; // строгий режим
 
 alert('Hello');
 
@@ -59,11 +59,6 @@ const isCheched = true,
 
 console.log(isCheched || !isClose); // оператор отрицания ставитсяв преф форме
 
-
-
-
-
-
 console.log(incr);
 console.log(decr);
 
@@ -71,13 +66,44 @@ console.log(5%2); // Вернет остаток от деления
 
 console.log(5*4 == 8) // Вернет булевое значение, == это оператор равно
 
+/// Условия 
 
+// Условия переводит любой тип данных в булиновый
 
+if ( 4 == 8 ) {            // ( 4 == 4) - это само условие, {в таких скобках мы выводим что необходимо сделать}
+    console.log('ok!');
+}   else {                 // else выводится если условие не выполнен
+    console.log('error');
+}
 
+const num = 80;
 
+if (num < 49) {
+    console.log('error')
+}   else if (num > 100) {  // проверка нескольких условий
+    console.log('many');
+}   else {
+    console.log('ok!');
+}
 
+// Тернарный оператор 
 
+(num === 50) ? console.log('ok!') : console.log('error');
 
+switch (num) {
+    case 49:
+        console.log('error');
+        break;
+    case 100:
+        console.log('error');
+        break;
+    case 50:
+        console.log('ok!');
+        break;
+    default:
+        console.log('not ok!');
+        break;
+}
 
 
 
